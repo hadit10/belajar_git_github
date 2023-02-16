@@ -1,0 +1,41 @@
+Perintah (command) yang biasa di pakai pada git:
+Ketikkan:
+-> git : untuk memeriksa apakah git sudah terinstal atau belum
+-> git -v : untuk memeriksa versi git yang terinstal
+-> git init : untuk menjadikan repo menjadi file master
+-> git status : untuk memeriksa status repo terhadap perubahan
+-> git log --all --decorate --oneline --graph : untuk melihat perubahan / commit dengan graph
+-> alias graph="git log --all --decorate --oneline --graph" : untuk menjadikan satu kata graph untuk mengecek git log  
+-> git add . : untuk menambahkan semua file atau folder ke dalam staging area
+-> git add index.html : untuk menambahkan file index.html ke dalam staging area
+-> git commit -m "menambahkan file index.html" : untuk melakukan commit apabila file index.html sudah modified dan berada di dalam staging area
+-> git commit -am "menambahkan file index.html" : untuk melakukan commit apabila file index.html baru ditambahkan ke dalam staging area
+-> git config : untuk memasukkan konfigurasi ke dalam git
+-> git config --list : untuk mengecek user git
+-> git branch : untuk melihat branch yang ada
+-> git branch tamu : untuk membuat branch tamu
+-> git merged tamu : untuk menggabungkan branch tamu ke branch master
+-> git branch --merged : untuk mengetahui branch mana yang sudah di merged
+-> git branch -d tamu : untuk menghapus branch tamu
+-> git branch -D tamu :untuk menghapus branch tamu tanpa di merged dahulu
+-> git checkout -b tamu : untuk membuat branch baru dan lansung pindah ke branch tersebut
+-> git help : mengetahui perintah yang ada di git
+-> pwd : untuk mengetahui lokasi git berada
+-> ls : untuk melihat isi direktori
+-> cd : untuk pindah direktori
+-> git checkout : untuk pindah branch / commit
+-> git checkout tamu : untuk pindah ke branch tamu
+-> git checkout "5 digit hash" --index.html : untuk kembali ke commit sebelumnya dan mengembalikan file yang lama
+-> git clone https://github.com/hadit10/belajar_git_github.git : untuk clone projek agar lansung dapat ditarik ke lokal
+-> git remote : untuk remote repo dari github lansung
+-> git remote -v : untuk mengetahui fungsi remote dan status koneksi
+-> git remote add origin https://github.com/hadit10/belajar_git_github.git : untuk mengoneksikan repository di lokal dengan yang ada di github
+-> git push -u origin master : untuk menyingkronkan repo lokal dengan repo github
+-> git pull : untuk menarik repo dari git ke lokal untuk mengatasi konflik ketika melakukan merging
+-> git fetch hadit10 : untuk mengetahui posisi commit ke 2 akun sudah up to date atau belum
+-> git merge hadit10/master : untuk menyamakan repo sumber dengan repo lokal
+-> file .gitignore : untuk mengabaikan file yang ditentukan agar tidak dibawa saat git status
+-> git rebase : untuk mengejar ke branch tujuan
+    git rebase tamu (master)
+-> github.com/github/gitignore : untuk cek file ignore apa saja yang disarankan untuk ditambahkan
+-> gitignore.io
