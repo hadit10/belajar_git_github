@@ -1,0 +1,20 @@
+tipe data pada javascript:
+1. number
+2. string
+3. boolean
+4. object
+5. function
+6. undefined
+
+1. number
+- tidak ada integer, hanya ada floating point
+- angka tanpa desimal -> akurat sampai 15 digit
+- angka dengan desimal -> pakai titik (3.14). maksimal 17 digit
+- eksponen -> 123e5 // 12300000, 123e-5 // 0.00123
+- bilangan negatif
+- jangan pernah mengawali angka dengan 0
+- angka spesial
+    - infinity -> 2/0
+    - -infinity -> -2/0
+    - NaN (Not a Number) -> 100 / "Apel"
+
