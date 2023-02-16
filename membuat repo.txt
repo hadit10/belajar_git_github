@@ -1,0 +1,27 @@
+Tahapan membuat repo baru menggunakan git dan mengupload ke github:
+-> tentukan lokasi repo di lokal dan gitbash here
+-> setelah masuk ke git, ketikkan perintah :
+   mkdir belajar_git_github
+-> cek repo yang sudah dibuat di lokasi penyimpanan yang sudah ditentukan sebelumnya
+-> jika sudah ada, silahkan masuk ke repo tersebut dengan menggunakan perintah git:
+   cd belajar_git_github
+-> jika sudah, maka selanjutnya buka repo tersebut menggunakan text editor yang kalian punya dengan mengetikkan perintah:
+    code .
+-> jika text editor sudah terbuka, maka langkah selanjutnya menjadikan repo tadi menjadi repo master agar bisa di push ke github, dengan mengetikkan perintah:
+    git init
+-> jika sudah berubah menjadi repo master, maka cek terlebih dahulu status git. Apakah ada file yang berubah atau tidak dengan mengetikkan:
+    git status
+-> jika ada file yang berubah dan belum masuk ke staging area, maka masukkan terlebih dahulu dengan perintah:
+    git add .
+-> jika sudah ditambahkan, lakukan commit file tadi dengan perintah:
+    git commit -am "membuat file 1.txt"
+-> jika sudah, cek ulang status nya kembali dengan mengetikkan perintah:
+    git status
+-> jika sudah tidak ada lagi file yang akan di commit, lakukan peng-upload-an file ke github dengan cara:
+    - buat terlebih dahulu file repo baru dengan nama belajar_git_github tanpa menambahkan file .readme
+    - jika sudah, lakukan peng-kopian format yang https ke git
+-> selanjutnya ketikkan perintah :
+    git remote add origin 'kopas file https'
+-> jika sudah terhubung, sinkronkan file yg ada di lokal dengan yang ada di github dengan cara:
+    git push -u origin master
+-> jika sudah berhasil upload, refresh halaman github. dan cek file yang sudah di tambahkan tadi
