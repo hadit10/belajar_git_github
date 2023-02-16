@@ -1,0 +1,17 @@
+Git
+-> merupakan dari version control system
+-> berguna untuk :
+    1. melacak histori perubahan
+    2. kolaborasi
+    3. sharing
+-> git terdiri dari folder utama, yang biasa disebut dengan repo / repository
+-> untuk membuat perubahan pada repo, dilakukan commit terlebih dahulu
+-> commit dilakukan pada cabang yang ditentukan, yang biasa disebut dengan branch
+
+Github
+-> github merupakan Instagramnya programmer yang berupa cloud
+-> pada github, terdapat 2 aksi yang bisa dilakukan, yaitu :
+    1. push -> mengirim data / commit
+    2. pull -> menarik data / clone
+-> untuk melakukan push dan pull, bisa dilakukan dengan cara FORK (Duplikat)
+-> nantinya fork yang dilakukan akan mengambil seluruh file / repo yang ada pada projek tersebut. termasuk commit dan lainnya
