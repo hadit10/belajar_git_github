@@ -1,0 +1,26 @@
+Operator pada Js:
+1. Binary -> memakai 2 operand
+    - aritmatika
+    - penugasan
+    - perbandingan
+    - logika
+    - string 
+2. Ternary -> memakai 3 operand
+    - kondisional
+3. Unary
+    - typeof
+
+Bahasan:
+1.  a. aritmatika (+,-,*,/,% (modulus/sisa bagi)) -> kukabataku (operator presedence)
+    b. penugasan / assignment (=,+=,-=,*=,/=,%=)
+        x += y -> x=x+y, dst
+    c. perbandingan / comparison -> menghasil true / false
+        == = sama dengan
+        != = tidak sama dengan
+        === = strict sama dengan (strict adalah operator identitas)
+        !== = strict tidak sama dengan 
+        > = lebih besar dari
+        < = lebih kecil dari
+        >= = lebih besar sama dengan
+        >= = lebih kecil sama dengan
+    

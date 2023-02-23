@@ -17,4 +17,3 @@ tipe data pada javascript:
     - infinity -> 2/0
     - -infinity -> -2/0
     - NaN (Not a Number) -> 100 / "Apel"
-
