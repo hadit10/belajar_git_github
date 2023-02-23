@@ -7,13 +7,29 @@ tipe data pada javascript:
 6. undefined
 
 1. number
-- tidak ada integer, hanya ada floating point
-- angka tanpa desimal -> akurat sampai 15 digit
-- angka dengan desimal -> pakai titik (3.14). maksimal 17 digit
-- eksponen -> 123e5 // 12300000, 123e-5 // 0.00123
-- bilangan negatif
-- jangan pernah mengawali angka dengan 0
-- angka spesial
-    - infinity -> 2/0
-    - -infinity -> -2/0
-    - NaN (Not a Number) -> 100 / "Apel"
+    - tidak ada integer, hanya ada floating point
+    - angka tanpa desimal -> akurat sampai 15 digit
+    - angka dengan desimal -> pakai titik (3.14). maksimal 17 digit
+    - eksponen -> 123e5 // 12300000, 123e-5 // 0.00123
+    - bilangan negatif
+    - jangan pernah mengawali angka dengan 0
+    - angka spesial
+        - infinity -> 2/0
+        - -infinity -> -2/0
+        - NaN (Not a Number) -> 100 / "Apel"
+
+2. string
+    berikut beberapa escape karakter pada javascript
+    - \0 -> karakter null
+    - \' -> '
+    - \" -> "
+    - \\ -> \
+    - \n -> new line / baris baru
+    - \t -> tab
+    - \b -> backspace
+    - \uxxx -> unicode
+    contoh : "ini adalah hari \n \n Jum\'at"
+    
+    fungsi string:
+    1. .length -> untuk menghitung jumlah karakter
+    

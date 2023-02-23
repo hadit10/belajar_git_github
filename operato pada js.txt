@@ -23,4 +23,10 @@ Bahasan:
         < = lebih kecil dari
         >= = lebih besar sama dengan
         >= = lebih kecil sama dengan
-    
+    d. logika
+        && = and -> keduanya harus benar, maka nilai true
+        || = or -> salah satu benar, maka true
+        !  = not -> kebalikan
+    e. operator string (+) -> penggabungan
+2.  kondisional -> mengecek sebuah kondisi
+3.  typeof -> untuk mengetahui tipe data dari nilai
