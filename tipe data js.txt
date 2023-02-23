@@ -32,4 +32,5 @@ tipe data pada javascript:
     
     fungsi string:
     1. .length -> untuk menghitung jumlah karakter
-    
+
+3. boolean -> sebuah tipe data untuk merepresentasikan logika true / false
