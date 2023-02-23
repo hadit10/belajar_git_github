@@ -34,3 +34,32 @@ tipe data pada javascript:
     1. .length -> untuk menghitung jumlah karakter
 
 3. boolean -> sebuah tipe data untuk merepresentasikan logika true / false
+    truthy              falsy
+    true                false
+    non-zero number     0
+    "string"            ""
+    object              undefined (var sudah, nilai var blm)
+    arrays              null
+    functions           NaN (Not a Number)
+
+4. obj / variabel
+    variabel -> digunakan untuk menampung nilai.
+    3 hal tentang variabel:
+    1. deklarasi -> mendaftarkan var ke dalam lingkup yg sesuai
+    2. inisialisasi -> menyediakan memori untuk var
+    3. assignment -> menetapkan nila yang spesifik ke dalam var
+    contoh: var x; // deklarasi & inisialisasi
+            x = 20; // assignment
+    cara pendeklarasian variabel:
+    1. var
+    ex : var x;
+    aturan penggunaan var:
+        a. var ga boleh pake spasi;
+        b. var 1gaboleh;
+        c. var boleh1;
+        d. var ini_juga_boleh;
+        e. var boleh$;
+        f. var $_$;
+        g. var iniBolehBanget; ->istilahnya Camel Case
+    2. length
+    3. const
