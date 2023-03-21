@@ -1,0 +1,162 @@
+CSS (Cascading Style Sheet)
+
+- Struktur CSS: 
+    selector {
+        property: value; 
+    }
+    ex:
+
+    1 selector
+    h1 { 
+        color: blue;
+        font-family: arial;
+    }
+
+    2 selector / grouping
+    h1, h2 {
+        font-size: 12px;
+    }
+
+    value yang lebih spesifik
+    ul li a{
+        color: orange;
+    }
+
+    pemberian style pada id
+    #p1{
+        color: orange;
+    }
+
+    pemberian style pada class
+    .p2{
+        color: red;
+    }
+
+cara memberikan komentar pada css : /* xxxxxxxxxxx */
+
+tempat tes css -> codepen.io
+
+referensi css:
+1. https://developer.mozilla.org/en-US/docs/Web/CSS/Reference
+2. https://css-tricks.com/almanac
+
+Sumber CSS
+1. embed -> css disimpan di dalam file itu sendiri
+    <style>
+        h1 {
+            color: lightblue;
+        }
+    </style>
+2. inline -> css disimpan di selector lansung
+    <h1 style="color: lightblue;">Hello world</h1>
+3. external -> css diambil dari sumber luar
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+
+contoh property css:
+Huruf
+1. font-family -> mengatur jenis font yang dipakai
+2. font-size -> mengatur ukuran font
+3. font-weight -> mengatur ketebalan font
+4. font-variant -> mengubah font menjadi small caps
+5. font-style -> mengubah font menjadi cetak miring
+6. line-height -> mengatur spasi antar baris
+7. color -> memberi warna pada tulisan
+CSS Font shorthand/singkatan
+body {
+    font: italic(font-style) normal(font-variant) bold(font-weight) 16px(font-size)(wajib)/18px(line-height) helvetica,arial,sans-serif(font-family)(wajib);
+}
+
+Text
+8. text-align -> mengatur format paragraf/teks
+9. text-indent -> memberi indentasi pada paragraf/teks
+10. text-decoration -> mengatur dekorasi pada teks (none, underline, overline, line-through)
+11. text-transform -> mengubah jenis huruf menjadi huruf besar, kecil / kapital (none, lowercase, uppercase, capitalize)
+12. letter-spacing -> mengatur spasi antar huruf (normal, px)
+13. word-spacing -> mengatur spasi antar kata (normal, px)
+
+Background
+14. background-color -> mengatur warna pada background
+15. background-image -> mengatur gambar yang akan digunakan pada background -> url(image/bg2.png) -> subtlepatterns.com
+16. background-position -> mengatur posisi gambar pada background (top/center/buttom left/center/right) -> 2 pilihan di kombinasikan
+17. background-repeat -> mengatur jenis pengulangan gambar pada background (repeat-x, repeat-y, no-repeat)
+CSS background shorthand/singkatan
+background: color url() repeat position;
+
+Pseudo class 1
+1. :link -> style default pada sebuah link (a yang memiliki href)
+    contoh pemberian pada class:
+        .hello:link{
+            color: orange;
+        }
+2. :hover -> style ketika kursor mouse berada diatas sebuah link/elemen
+        .hello:hover{
+            color: green;
+            font-family: arial;
+            font-size: 20px;
+        }
+3. :active -> style ketika sebuah link di-klik (keadaan aktif)
+        .hello:active{
+            font-style: italic;
+        }
+4. :visited -> style ketika sebuah link sudah pernah dikunjungi sebelumnya (menggunakan browser yang sama)
+        .hello:visited{
+            color: red;
+        }
+
+Pseudo Class 2 (parenting)
+1. :first-child -> memilih elemen pertama dari sebuah parent
+    li:first-child a {
+        color: green;
+    }
+2. :last-child -> memilih elemen terakhir dari sebuah parent
+    li:last-child a {
+        color: green;
+    }
+3. :nth-child -> memilih elemen ke-n dari sebuah parent -> even (genap) / odd (ganjil), 2n (kelipatan 2), 3n+1 (dari 1, baru ditambah 3 selanjutnya)
+    li:nth-child(even) a:hover {
+        color: red;
+    }
+
+Pseudo class 3 (posisi elemen)
+1. :first-of-type -> memilih elemen pertama dari sebuah jenis / tipe tag
+    p:first-of-type {
+        color: blue;
+    }
+2. :last-of-type -> memilih elemen terakhir dari sebuah jenis / tipe tag
+    p:last-of-type {
+        color: blue;
+    }
+
+Inheritance (Pewarisan) -> selector inherit
+1. color
+2. font
+3. letter-spacing
+4. line-height
+5. line-style
+6. text-align
+7. text-indent
+8. text-transform
+9. visibility
+10. white space
+
+ex:
+body {
+    font-family: arial;
+    color: darkgrey;
+}
+
+a { color: inherit; }
+
+Specificity -> kalkulator Specificity : http://specificity.keegan.st
+
+        #p1     .p1     p
+0       0       0       0
+inline  id      class   element
+
+ex:
+1.  #p1 { color: red; } -> lebih spesifik (0100)
+    p { color: green; } -> (0001)
+
+2.  ul#sarapan li { color: red }            -> 0102
+    ul#sarapan li.favorit { color: green; } -> 0112
